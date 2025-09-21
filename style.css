@@ -164,11 +164,11 @@ body {
 }
 
 .medicine-table {
-    display: block;
     max-height: 60vh;
     overflow-y: auto;
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .medicine-table th {

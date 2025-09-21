@@ -749,7 +749,7 @@
             }
 
             try {
-                const response = await fetch('delete_medicine.php', {
+                const response = await fetch('https://tatbeqak.site/apps/tatbeqey/apps/makhzan/delete.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
@@ -796,7 +796,7 @@
                 availability: formData.get('medicineAvailability')
             };
 
-            const url = isEditing ? 'update_medicine.php' : 'add_medicine.php';
+            const url = isEditing ? 'https://tatbeqak.site/apps/tatbeqey/apps/makhzan/update.php' : 'https://tatbeqak.site/apps/tatbeqey/apps/makhzan/add.php';
 
             try {
                 const response = await fetch(url, {

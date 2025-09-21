@@ -13,7 +13,7 @@ window.addEventListener('load', function() {
             document.getElementById('mainContent').classList.add('show');
             loadMedicines();
         }, 500);
-    }, 100);
+    }, 3000);
 });
 
 // تحميل الأدوية من الخادم

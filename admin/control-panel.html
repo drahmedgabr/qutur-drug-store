@@ -817,9 +817,11 @@
                     closeModal();
                     loadMedicines();
                 } else {
+                    closeModal();
                     showMessage('خطأ: ' + data.message, 'error');
                 }
             } catch (error) {
+                closeModal();
                 console.error('خطأ في حفظ البيانات:', error);
                 showMessage('خطأ في الاتصال بالخادم', 'error');
             }
@@ -832,7 +834,6 @@
             messageDiv.className = `message ${type}`;
             messageDiv.textContent = message;
             messageDiv.style.display = 'block';
-
             messageContainer.innerHTML = '';
             messageContainer.appendChild(messageDiv);
 
